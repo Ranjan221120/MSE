@@ -15,6 +15,7 @@ This application featuring GitHub pull request integration, and responsive UI wi
 - **Flutter** (^3.10.1) - UI framework
 - **GetX** (^5.0.0) - State management & routing
 - **HTTP** (^1.6.0) - API calls
+- **intl** (^0.20.2) - Date formatting
 - **Flutter Secure Storage** (^9.2.4) - Secure token storage
 - **Shimmer** (^3.0.0) - Loading animations
 
@@ -26,7 +27,7 @@ lib/
 ├── assignment/
 │   ├── modules/
 │   │   ├── login_screen/      # Login feature
-│   │   └── pull_request/      # PR display feature
+│   │   └── pull_request/      # Pull Request display feature
 │   ├── data/
 │   │   ├── model/             # Data models
 │   │   └── service/           # API service
