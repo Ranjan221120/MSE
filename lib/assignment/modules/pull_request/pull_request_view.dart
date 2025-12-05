@@ -29,6 +29,8 @@ class PullRequestView extends GetView<PullRequestController> {
           return emptyWidget();
         } else if (controller.status.value == Status.error) {
           return errorWidget();
+        } else if (controller.status.value == Status.checkInternet) {
+          return checkInternetWidget();
         } else {
           return prListWidget();
         }
@@ -56,6 +58,30 @@ class PullRequestView extends GetView<PullRequestController> {
                 ),
                 const SizedBox(height: 10),
                 Text(controller.errorMessage.value),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget checkInternetWidget() {
+    return RefreshIndicator(
+      onRefresh: () async {
+        controller.fetchPullRequests();
+      },
+      child: ListView(
+        children: [
+          Container(
+            height: Get.height - 100,
+            alignment: Alignment.center,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.wifi_off_outlined, size: 80, color: Colors.blue),
+                const SizedBox(height: 5),
+                Text(controller.errorMessage.value, style: const TextStyle()),
               ],
             ),
           ),

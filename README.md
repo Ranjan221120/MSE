@@ -18,6 +18,7 @@ This application featuring GitHub pull request integration, and responsive UI wi
 - **intl** (^0.20.2) - Date formatting
 - **Flutter Secure Storage** (^9.2.4) - Secure token storage
 - **Shimmer** (^3.0.0) - Loading animations
+- **Connectivity Plus** (^7.0.0) - Internet checking
 
 ## Project Structure
 
@@ -54,6 +55,7 @@ lib/
 - Reactive programming with GetX bindings  
 - Secure storage data  
 - Error handling
+- Checking Internet connections
 - Loading states
 - Themes 
 - Responsive UI that works across devices  
