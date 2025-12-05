@@ -60,3 +60,6 @@ lib/
 - Themes 
 - Responsive UI that works across devices  
 - Network request management
+
+## Demo Video
+[Click here to watch demo](https://github.com/Ranjan221120/MSE/blob/main/mse.mp4)
